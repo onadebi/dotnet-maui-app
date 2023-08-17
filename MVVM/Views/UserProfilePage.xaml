@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnaxDallE.MVVM.Views.UserProfilePage"
+             Title="UserProfilePage"
+             xmlns:viewmodel="clr-namespace:OnaxDallE.MVVM.ViewModels"
+             x:DataType="viewmodel:UserProfileViewModel"
+             >
+    <Grid RowDefinitions="*,*">
+        <Label Text="Test content"/>
+        <Button Text="Update" Command="{Binding ChangeUserProf}" />
+        <Label Grid.Row="1" Text="{Binding UserProfDetail.UserName}" FontSize="24" HorizontalTextAlignment="Center" VerticalOptions="Start" BackgroundColor="{StaticResource Gray200}" TextColor="Red"/>
+        
+    </Grid>
+
+</ContentPage>
