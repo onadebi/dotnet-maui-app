@@ -8,6 +8,7 @@ public partial class App : Application
 	public App()
 	{
 		InitializeComponent();
-		MainPage = new UserProfilePage(new UserProfileViewModel());// new AppShell();
-	}
+        MainPage = new DashboardHomePage( new DashboardHomeViewModel());
+        //MainPage = new UserProfilePage(new UserProfileViewModel());// new AppShell();
+    }
 }
